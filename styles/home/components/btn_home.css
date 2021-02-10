@@ -1,0 +1,13 @@
+.btn--home {
+  width: 160px;
+  height: 65px;
+}
+#btn--try{
+    color: white;
+    background-color: #0B66BF;
+}
+#btn--discover{
+    margin-left: 25px;
+    color: #626262;
+    background-color: white;
+}

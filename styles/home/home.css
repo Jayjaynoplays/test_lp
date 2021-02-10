@@ -1,82 +1,56 @@
-@import  "animation/btn_animation.css";
-#home  {
-    width: 100%;
-}
-.navbar--wrapper {
-  width: 100%;
-  height: 80px;
-  z-index: 1300;
-  position: fixed;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
+@import "animations/btn_animation.css";
+@import "animations/nav_underline.css";
+@import "components/navbar.css";
+@import "components/btn_home.css";
 
-.navbar--container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.navbar--compo {
-  height: 100%;
-  width: 800px;
-  display: flex;
-  align-items: center;
-  margin-left: 343px;
-}
-.navbar--compo a {
-  color: #3e3e3e;
-  margin-left: 30px;
-  position: relative;
-}
-.nav--combo--text {
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-}
 
-.navbar--compo a:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 100;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #0b66bf;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-.navbar--compo a:hover {
-  text-decoration: none;
-}
-.navbar--compo a:hover:after {
+#home {
   width: 100%;
-  left: 0;
 }
-
-.btn--download {
-  height: 50px;
-  width: 144px;
-  border: 1px solid #0b66bf;
-  box-sizing: border-box;
-  border-radius: 50px;
-  background-color: white;
+.home--content--wrapper {
+  width: 100%;
+  background: linear-gradient(180deg, #d2def5 0%, rgba(233, 240, 255, 0) 100%);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  margin-top: 80px;
 }
-.btn--download--text {
+.home--content--container {
+  width: 50%;
+}
+.btn_custom {
   color: #0b66bf;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+  border-radius: 50px;
+  border: 1px solid #0b66bf;
+  cursor: pointer;
+}
+.home--content {
+  position: relative;
+  width: 100%;
+  padding: 108px 0px 0px 98px;
+  -webkit-animation-direction: alternate;
+}
+.home--title {
+  color: #202d51;
+  font-size: 35px;
+  line-height: 48px;
+}
+.home--title h1 {
+  font-weight: 800;
+}
+.home--text {
+  width: 460px;
+  font-size: 20px;
+  line-height: 27px;
+  margin-top: 50px;
+  color: #626262;
+}
+.home--btn--wrapper{
+  margin-top: 30px;
+}
+.home--image {
+  margin-top: 11px;
 }
 
-.bars--icon {
-  display: none;
-}

@@ -1,0 +1,19 @@
+.navbar--compo a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 100;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #0b66bf;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .navbar--compo a:hover {
+    text-decoration: none;
+  }
+  .navbar--compo a:hover:after {
+    width: 100%;
+    left: 0;
+  }

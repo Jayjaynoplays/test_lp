@@ -1,3 +1,4 @@
+@import  "animation/btn_animation.css";
 #home  {
     width: 100%;
 }
@@ -68,7 +69,6 @@
   justify-content: center;
   cursor: pointer;
 }
-
 .btn--download--text {
   color: #0b66bf;
   font-weight: 700;

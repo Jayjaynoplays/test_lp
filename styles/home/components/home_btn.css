@@ -1,7 +1,16 @@
+@import '../animations/home_btn.css';
+
+
+
 .btn--home {
   width: 160px;
   height: 65px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
 }
+
 #btn--try{
     color: white;
     background-color: #0B66BF;

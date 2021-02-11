@@ -1,0 +1,35 @@
+@keyframes zoom {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.3;
+  }
+  100% {
+    width: 1500px;
+    height: 1500px;
+    opacity: 0;
+  }
+}
+
+.btn--home--animation div {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  pointer-events: none;
+}
+.btn--home--animation:hover div {
+  transform: translateY(-100%);
+  text-decoration: none;
+}
+
+.btn--home--animation span {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: zoom 1s infinite;
+}

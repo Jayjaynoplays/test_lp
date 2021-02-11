@@ -6,12 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UniGo</title>
-    <script src="./scripts/home.js"></script>
-    <script src="./scripts/features.js"></script>
-    <script src="./scripts/users.js"></script>
-    <script src="./scripts/members.js"></script>
-    <script src="./scripts/q_a.js"></script>
-    <script src="./scripts/contacts.js"></script>
 
     <link rel="stylesheet" href="./styles/home/home.css">
     <link rel="stylesheet" href="./styles/features.css">
@@ -21,24 +15,31 @@
     <link rel="stylesheet" href="./styles/contacts.css">
     <link rel="stylesheet" href="./styles/common.css">
 
+    <!-- AOS LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- FONTAWESOME LIBRARY -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+    <!-- GOOGLE FONT LIBRARY -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <!-- BOOTSTRAP LIBRARY -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
 
 <body>
     <div id="app">
         <!-- HOME SECTION START HERE -->
         <section id="home">
-            <div class="home--wrapper" style="position: relative;">
-                <div class="navbar--wrapper" style="position: absolute;">
+            <div class="home--wrapper" >
+                <div class="navbar--wrapper" >
                     <div class="navbar--logo">
                         <a href="#home">
                             <img src="./assets/img/logo.svg" alt="logo">
@@ -50,8 +51,7 @@
                         <a href="#users" id="usersnav" onclick="openNav()">Đối tượng sử dụng</a>
                         <a href="#q&a" id="q&anav" onclick="openNav()">Q&A</a>
                         <a href="#contact" id="contactnav" onclick="openNav()">Thông tin liên hệ</a>
-                        <button class="btn_custom btn--download btn--download--animation"
-                            style="margin-left: 30px;">
+                        <button class="btn_common btn--navbar btn--navbar--animation" style="margin-left: 30px;">
                             Thử ngay <em class="fas fa-download" style="padding-left: 12px;"></em>
                         </button>
                         <a class="bars--icon" onclick="openNav()">
@@ -59,64 +59,67 @@
                         </a>
                     </div>
                 </div>
-                <div class="home--content--wrapper" style="position: absolute;">
-                    <div class="home--content--container" id="home--content--container">
-                        <div class="home--content" id="home--contentA">
-                            <div class="home--title">
-                                <h1><span style="color:#0B66BF;">uniGO</span> - Hệ thống mô phỏng ảo bản đồ trường ĐH
-                                    Bách Khoa - Đại học Đà Nẵng</h1>
-                            </div>
-                            <div class="home--text">
-                                <p>Sản phẩm được phát triển bởi Developer Student Clubs. Bằng cách áp dụng thuật toán cơ
-                                    bản và các nền tảng công nghệ mới phổ biến, uniGO giúp người dùng tra cứu thông tin,
-                                    địa điểm chính xác của các phòng học dễ dàng hơn.</p>
-                            </div>
-                            <div class="home--btn--wrapper">
-                                <button class="btn_custom btn--home" id="btn--try">Thử ngay <img src="../assets/img/shuttle.svg" alt="">   </button>
-                                <button class="btn_custom btn--home" id="btn--discover">Khám phá ngay</button>
-                            </div>
+                <div class="home--content--wrapper" >
+                    <div class="home--content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="home--title">
+                            <h1><span style="color:#0B66BF;">uniGO</span> - Hệ thống mô phỏng ảo bản đồ trường ĐH
+                                Bách Khoa - Đại học Đà Nẵng</h1>
+                        </div>
+                        <div class="home--text">
+                            <p>Sản phẩm được phát triển bởi Developer Student Clubs. Bằng cách áp dụng thuật toán cơ
+                                bản và các nền tảng công nghệ mới phổ biến, uniGO giúp người dùng tra cứu thông tin,
+                                địa điểm chính xác của các phòng học dễ dàng hơn.</p>
+                        </div>
+                        <div class="home--btn--wrapper">
+                            <a class="btn_common btn--home btn--home--animation" id="btn--try" href="#">
+                                <div>Thử ngay</div>
+                                <div><em class="fas fa-arrow-down fa-2x"></em></div>
+                            </a>
+
+                            <a class="btn_common btn--home btn--home--animation" id="btn--discover" href="#">
+                                <div>Khám phá ngay</div>
+                                <div><img src="../assets/img/discover.svg" alt=""></div>
+                            </a>
                         </div>
                     </div>
-                    <div class="home--image">
+                    <div class="home--image" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                         <img src="../assets/img/home_bg.svg" alt="">
                     </div>
                 </div>
             </div>
-    </div>
-    </section>
+        </section>
 
-    <!-- HOME SECTION END HERE -->
+        <!-- HOME SECTION END HERE -->
 
-    <!-- FEATURES SECTION START HERE -->
-    <section id="features">
+        <!-- FEATURES SECTION START HERE -->
+        <section id="features">
+        </section>
+        <!-- FEATURES SECTION END HERE -->
 
-    </section>
-    <!-- FEATURES SECTION END HERE -->
+        <!-- USERS SECTION START HERE -->
+        <section id="users">
 
-    <!-- USERS SECTION START HERE -->
-    <section id="users">
-
-    </section>
-    <!-- USERS SECTION END HERE -->
+        </section>
+        <!-- USERS SECTION END HERE -->
 
 
-    <!-- MEMBERS SECTION START HERE -->
-    <section id="members">
+        <!-- MEMBERS SECTION START HERE -->
+        <section id="members">
 
-    </section>
-    <!-- MEMBERS SECTION END HERE -->
+        </section>
+        <!-- MEMBERS SECTION END HERE -->
 
-    <!-- Q&A SECTION START HERE -->
-    <section id="q&a">
+        <!-- Q&A SECTION START HERE -->
+        <section id="q&a">
 
-    </section>
-    <!-- Q&A SECTION END HERE -->
+        </section>
+        <!-- Q&A SECTION END HERE -->
 
-    <!-- CONTACTS SECTION START HERE -->
-    <section id="contacts">
+        <!-- CONTACTS SECTION START HERE -->
+        <section id="contacts">
 
-    </section>
-    <!-- CONTACT SECTION END HERE -->
+        </section>
+        <!-- CONTACT SECTION END HERE -->
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -128,5 +131,25 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="./scripts/home.js"></script>
+<script src="./scripts/features.js"></script>
+<script src="./scripts/users.js"></script>
+<script src="./scripts/members.js"></script>
+<script src="./scripts/q_a.js"></script>
+<script src="./scripts/contacts.js"></script>
+
+<script>
+    AOS.init();
+    AOS.init({
+        once: false,
+        mirror: true,
+    });
+    $(document).ready(function () {
+        $(this).scrollTop(0);
+    });
+
+</script>
 
 </html>

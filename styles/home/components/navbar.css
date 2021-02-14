@@ -1,23 +1,37 @@
 @import "../animations/nav_btn.css";
 @import "../animations/nav_underline.css";
 
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+.items__center {
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+}
 .navbar--wrapper {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
 }
-.navbar--logo{
-  margin-left: 105px;
+.navbar--logo {
+  margin-left: 95px;
 }
 .navbar--compo {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-left: 260px !important;
+}
+.navbar--compo li {
+  display: inline-block;
 }
 .navbar--compo a {
   color: #3e3e3e !important;
-  margin-left: 30px;
+  margin-left: 14px;
   position: relative;
 }
+
 .nav--combo--text {
   text-decoration: none;
   font-weight: 600;
@@ -25,6 +39,7 @@
 }
 
 .btn--navbar {
+  margin-left: 30px;
   height: 50px;
   width: 144px;
   box-sizing: border-box;
@@ -34,26 +49,60 @@
   justify-content: center;
 }
 
-
-.bars--icon {
-  display: none;
+@media (max-width: 1399.98px) {
+  /* .navbar--compo {
+    padding-left: 129px !important;
+  } */
 }
 
-@media (min-width: 991.98px) {
-  .navbar-collapse{
-    flex-grow: 0;
-  }
-  .navbar--wrapper {
-    justify-content: center;
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .navbar--logo {
+    margin-left: 20px;
   }
   .navbar--compo {
-    margin-left: 175px;
+    padding-left: 45px !important;
   }
-
+  .navbar--compo a {
+    margin-left: 5px;
+  }
+  .btn--navbar {
+    margin-left: 5px;
+  }
 }
+
+/* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .navbar--compo {
-    margin-top: 5px;
+    /* position: relative; */
     align-items: flex-start;
+    padding-left: 45px !important;
+    z-index: 100;
   }
+  .navbar--compo a{
+    /* position: absolute; */
+    display: block;
+    margin-top: 5px;
+  }
+  .btn--navbar {
+    /* position: absolute; */
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 410.98px) {
+}
+
+@media (max-width: 321px) {
 }

@@ -1,18 +1,30 @@
-.btn--navbar--animation{
+@keyframes zoom {
+    0% {
+      width: 0px;
+      height: 0px;
+      opacity: 0.3;
+    }
+    100% {
+      width: 1500px;
+      height: 1500px;
+      opacity: 0;
+    }
+  }
+  .btn--navbar--slide {
     transition: all 1s;
     position: relative;
     overflow: hidden;
     z-index: 1;
-}
-.btn--navbar--animation:after {
+  }
+  .btn--navbar--slide:after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: white;
     z-index: -2;
-}
-.btn--navbar--animation:before {
+  }
+  .btn--navbar--slide:before {
     content: "";
     color: white;
     position: absolute;
@@ -24,12 +36,24 @@
     transition: all 0.3s;
     border-radius: 10rem;
     z-index: -1;
-}
-.btn--navbar--animation:hover{
+  }
+  .btn--navbar--slide:hover {
     border: none;
     color: white;
-}
-
-.btn--navbar--animation:hover:before {
+  }
+  
+  .btn--navbar--slide:hover:before {
     width: 100%;
-}
+  }
+  
+  .btn--navbar--circleBlur span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: zoom 1s infinite;
+  }
+  

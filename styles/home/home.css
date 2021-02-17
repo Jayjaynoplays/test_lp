@@ -6,7 +6,7 @@
   height: auto;
   height: 815px;
 }
-.home--wrapper{
+.home--wrapper {
   width: auto;
   height: auto;
 }
@@ -30,9 +30,8 @@
 }
 
 .home--content {
-  width: 47%;
-  padding: 108px 0px 0px 123px;
-  -webkit-animation-direction: alternate;
+  width: 46%;
+  padding: 108px 0px 0px 230px;
 }
 .home--title {
   color: #202d51;
@@ -54,20 +53,25 @@
 }
 .home--image {
   margin-top: 11px;
+  margin-left: 55px;
   width: 674px;
-  height: 724px;
   height: auto;
-  -webkit-animation-direction: alternate;
 }
-
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
+  .home--content {
+    width: 47%;
+    padding: 108px 0px 0px 123px;
+  }
+  .home--image {
+    margin-left: 0px;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-  .home--content{
+  .home--content {
     width: 55%;
     padding: 90px 0px 0px 79px;
   }
@@ -75,12 +79,12 @@
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  .home--content--wrapper{
+  .home--content--wrapper {
     flex-direction: column;
     display: flex;
     justify-content: center;
   }
-  .home--content{
+  .home--content {
     width: 90%;
     padding: 90px 0px 0px 79px;
   }
@@ -88,7 +92,7 @@
     font-size: 50px;
     font-weight: 900;
   }
-  .home--text{
+  .home--text {
     width: 100%;
     font-size: 30px;
     line-height: 35px;
@@ -97,24 +101,24 @@
     display: flex;
     justify-content: center;
   }
-  .home--image{
+  .home--image {
     display: none;
   }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-  .home--content{
+  .home--content {
     padding: 90px 0px 0px 72px;
   }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .home--content--wrapper{
+  .home--content--wrapper {
     align-items: center;
   }
-  .home--content{
+  .home--content {
     width: 90%;
     padding: 30px 0 0 0;
     display: flex;
@@ -128,15 +132,14 @@
 }
 
 @media (max-width: 410.98px) {
-  .home--btn--wrapper{
+  .home--btn--wrapper {
     margin-top: 20px;
   }
-  .btn--home{
+  .btn--home {
     width: 130px;
     height: 50px;
   }
 }
 
 @media (max-width: 321px) {
-
 }

@@ -1,4 +1,8 @@
+@import "components/department.css";
+@import "components/carousel.css";
+
 #members {
+  margin-top: 160px;
   width: 100%;
   height: auto;
   /* height: 815px; */

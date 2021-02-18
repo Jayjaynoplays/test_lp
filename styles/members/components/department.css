@@ -1,0 +1,13 @@
+.department--wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 95px;
+}
+.department--name {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: #202D51;
+}

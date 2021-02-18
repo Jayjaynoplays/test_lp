@@ -2,30 +2,46 @@
 @import "components/carousel.css";
 
 #members {
-  margin-top: 160px;
+  margin-top: 100px;
   width: 100%;
   height: auto;
-  /* height: 815px; */
 }
 .members--wrapper {
   width: auto;
   height: auto;
-  margin-left: 200px;
+}
+
+.ml-55 {
+  margin-left: 115px;
+}
+.fl-cl {
+  display: flex;
+  flex-direction: column;
+}
+.center-text {
+  display: flex;
+  justify-content: center;
 }
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-  .members--wrapper {
-    margin-left: 123px;
+  .section--title {
+    margin-left: 123px !important;
   }
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .section--title {
+    margin-left: 75px !important;
+  }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .section--title {
+    margin-left: 10px !important;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */

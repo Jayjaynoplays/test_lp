@@ -1,3 +1,7 @@
+#carousel__768{
+  display: none;
+}
+
 .row {
   justify-content: center;
   height: 322px;
@@ -5,6 +9,7 @@
 .row img:not(:first-child) {
   padding-left: 100px;
 }
+
 
 .carousel-indicators li {
   text-indent: unset !important;
@@ -135,10 +140,29 @@
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-  .department--name {
-    /* display: none !important; */
+  #carousel{
+    display: none;
   }
-}
+  #carousel__768{
+    display: unset;
+  }
+
+  .carousel-inner{
+    top:40px;
+  }
+  .carousel-control-prev {
+    top: 53px !important;
+  }
+  .carousel-control-next {
+    top: 53px !important;
+  }
+  .row img:not(:first-child){
+    padding-left: 35px !important;
+  }
+  .ml-55{
+    margin-left: 40px !important;
+  }
+} 
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

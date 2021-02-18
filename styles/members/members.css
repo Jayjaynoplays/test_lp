@@ -53,7 +53,18 @@
 }
 
 @media (max-width: 410.98px) {
+  .section--title{
+    margin-left: 5px  !important;
+  }
+  .section--title img{
+    display: none !important;
+  }
+
 }
 
 @media (max-width: 321px) {
+  .section--title{
+    font-size: 32px !important;
+    margin-top: 230px;
+  }
 }

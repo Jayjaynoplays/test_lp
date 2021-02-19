@@ -123,9 +123,6 @@
   .carousel-indicators li:first-child {
     margin-left: 10px !important;
   }
-  .row img {
-    /* width: 90% !important; */
-  }
   .memberPhoto__768 img {
     padding-left: 0 !important;
     margin-left: 20px !important;
